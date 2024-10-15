@@ -135,7 +135,7 @@ with tab2:
 with tab3:
     st.header("Try your luck!")
     st.write("<br>", unsafe_allow_html=True)
-    st.write("Have some Fun! This tries to replicate a way that longer chains have an advantage in the draw.")
+    st.write("This tries to replicate a way that longer chains have an advantage in the draw. This is entirely speculative so Have some Fun!")
     # Move wallet input and analysis to the top of this tab
     st.markdown("<hr>", unsafe_allow_html=True)
     st.subheader("Wallet Analysis")
