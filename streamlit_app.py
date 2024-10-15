@@ -24,7 +24,38 @@ df['Total Units'] = df[['6', '5', '4', '3']].sum(axis=1)
 st.image('Landdrop01.png', use_column_width=True)
 
 # App title
-st.title("The Island: Wallet Probability Land Drop")
+st.title("Sma11's WilderWorld Land Drop 1 Fun")
+
+# Custom CSS for tabs
+st.markdown("""
+    <style>
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 24px;
+    }
+    .stTabs [data-baseweb="tab"] {
+        height: 50px;
+        white-space: pre-wrap;
+        background-color: #111111;
+        border-radius: 4px 4px 0px 0px;
+        gap: 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 200;
+    }
+    .stTabs [aria-selected="true"] {
+        background-color: #333333;
+    }
+    .stTabs [data-baseweb="tab"] [data-testid="stMarkdownContainer"] p {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .stTabs [data-baseweb="tab"]:nth-of-type(3) [data-testid="stMarkdownContainer"] p {
+        color: #00FF00;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Create tabs
 tab1, tab2, tab3 = st.tabs(["Wallet Summary", "Land Genesis Summary", "Try your luck!"])
