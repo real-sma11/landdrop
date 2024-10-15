@@ -250,6 +250,15 @@ with tab3:
                 st.pyplot(fig)
 
             # Random plot selection per unit owned by wallet
+            st.markdown("""
+                <style>
+                div.stButton > button:first-child {
+                    width: 100%;
+                    font-weight: bold;
+                    color: #00FF00;
+                }
+                </style>""", unsafe_allow_html=True)
+
             if st.button("Run Random Draw"):
                 draw_results = []
                 for column in ['6', '5', '4', '3']:
@@ -323,4 +332,3 @@ with tab3:
             st.write("Wallet not found.")
     else:
         st.write("Please enter a wallet address to proceed with the random draw.")
-
