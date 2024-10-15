@@ -334,7 +334,7 @@ with tab3:
                             draw_results.append({
                                 "Neighborhood": selected_neighborhood.name,
                                 "Plot Type": selected_plot_type,
-                                "Unit Owned": column
+                                "Chain Used for Draw": column
                             })
 
                 results_df = pd.DataFrame(draw_results)
